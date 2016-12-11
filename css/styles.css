@@ -6,10 +6,9 @@
 }
 
 .wrapper {
-  height: 100vh;
+  /*height: 100vh;*/
   margin: 0;
   color: white;
-  /*min-height: 50px;*/
 
 }
 p {
@@ -38,11 +37,7 @@ h2 {
 .btm-text {
   background-color: red;
 }
-.cf::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 /*////////////////////END GLOBAL///////////////*/
 
 /*////////////////////LARGE///////////////*/
@@ -50,73 +45,104 @@ h2 {
 
 @media only screen and (min-width: 985px){
 
-.big-text-box  {
+
+/*.big-text-box  {
+  margin-left: 30px;
+  margin-bottom: -40px;
+  width: 60%;
+  background-color: green;
+  top: 50px;
+  left: 0.25em;
+  padding: 30px;
+  display: inline-block;
+  float: left;
+}*/
+/*.big-text-box  {
   margin-left: 30px;
   margin-bottom: -40px;
   width: 50%;
-  height: 40%;
-  background-color: green;
+  height: auto;
+  background-color: pink;
   position: absolute;
   top: 10em;
   left: 0.25em;
   padding: 30px;
   display: inline-block;
-}
-.top, .btm {
-}
+}*/
 .big-img {
-  /*position: relative;*/
   width: 100%;
   height: 100%;
   background-image: url("../img/lrg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: inline-block;
+  display: block;
+
 }
+
 .big {
   width: 66%;
-  height: 100vh;
+  height: 40em;
   float: left;
-  display: inline-block;
 }
-.top {
-  width: 34%;
-  height: 50%;
-  float: right;
-  display: inline-block;
-  /*position: absolute;
-  top: .25em;*/
 
+
+
+
+/*
+.top {
+  height: 50%;
 }
 .btm {
-  width: 34%;
   height: 50%;
+}*/
+.top, .btm {
+  height: 20em;
+  width: 34%;
   float: right;
-  display: inline-block;
-  /*position: absolute;
-  top: 18.05em;*/
-
-
 }
 .top-img, .btm-img {
   width: 100%;
-  height: 66%;
+  height: 70%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
-  display: inline-block;
+  display: block;
+
 }
+.top-text, .btm-text {
+  width: 100%;
+  min-height: 30%;
+  display: block;
+  padding: 10px;
+
+}
+
+.top-text h2, .btm-text h2{
+  font-size: 12pt;
+  line-height: 1.5em;
+}
+
+.tags {
+  margin-top: 10px;
+}
+/*
+
+
 
 .top-text, .btm-text {
   width: 100%;
-  height: 34%;
-  /*margin: auto;*/
+  height: 20%;
+  margin: auto;
   margin-top: -9px;
   display: inline-block;
+  padding: 10px;
+  content: "";
+  display: table;
+  clear: both;
 }
 
-
+}*/
 }
 
 /*////////////////////END LARGE///////////////*/
@@ -148,37 +174,46 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: inline-block;
+    display: block;
   }
+
+
   .top {
     width: 50%;
     float: left;
-    display: inline-block;
-
+    display: block;
   }
   .btm {
     width: 50%;
     float: right;
-    display: inline-block;
-
+    display: block;
   }
+
   .top-img, .btm-img {
     width: 100%;
     height: 15em;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right;
-    display: inline-block;
+    background-position: center;
+    display: block;
   }
 
   .top-text, .btm-text {
     width: 100%;
-    height: 7.5em;
-    margin: auto;
-    display: inline-block;
+    height: 20%;
+    display: block;
+
   }
 
+  .top-text h2, .btm-text h2{
+    font-size: 12pt;
+    line-height: 1.5em;
 
+  }
+
+  .tags {
+    margin-top: 10px;
+  }
 }
 
 /*////////////////////END MEDIUM///////////////*/
@@ -193,36 +228,18 @@ h2 {
     width: 100%;
     height: 70%;
   }*/
-  .top, .btm {
-    width: 100%;
-    height: 30%;
-  }
-
-
-
-
-
-  .top-img, .btm-img {
-    width: 34%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    display: inline-block;
-  }
-
 
   .big-text-box  {
     margin-left: 30px;
     margin-bottom: -40px;
-    width: 50%;
-    max-height: 21em;
+    width: 65%;
+    max-height: 19em;
     background-color: grey;
     position: absolute;
     top: 4em;
     left: 0.25em;
     padding: 20px;
-    display: inline-block;
+    display: block;
   }
 
   .big-img {
@@ -233,23 +250,40 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display: block;
+  }
+  .tags {
+    margin-top: 10px;
+  }
+  .top, .btm {
+    width: 100%;
+    min-height: 0;
     display: inline-block;
+
+  }
+  .top-img, .btm-img {
+    width: 34%;
+    height: 12em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    display: inline-block;
+    margin-bottom: -4px;
   }
 
-  .tags {
-    /*display: inline-block;*/
-    /*position: relative;*/
-    /*top: 50px;*/
-  }
   .top-text, .btm-text {
     width: 66%;
-    height: 100%;
-    margin: auto;
+    height: 12em;
     display: inline-block;
     float: right;
     padding: 10px;
+    line-height: 1.5em;
+
+
   }
   .top-text h2, .btm-text h2{
-    font-size: 13pt;
+    font-size: 1em;
   }
+
+
 }
