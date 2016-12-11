@@ -6,10 +6,8 @@
 }
 
 .wrapper {
-  /*height: 100vh;*/
   margin: 0;
   color: white;
-
 }
 p {
   font-family: 'Roboto', sans-serif;
@@ -19,12 +17,8 @@ h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
   font-size: 18pt;
-  margin: 0;
 }
 
-.tags {
-
-}
 .top-img {
   background-image: url("../img/top.jpg");
 }
@@ -46,103 +40,76 @@ h2 {
 @media only screen and (min-width: 985px){
 
 
-/*.big-text-box  {
+.big .tags {
+  margin-top: 90px;
+}
+#hideme{
+  margin-top: 20px;
+}
+.big h2 {
+  font-size: 30px;
+
+}
+.big-text-box  {
   margin-left: 30px;
   margin-bottom: -40px;
-  width: 60%;
-  background-color: green;
-  top: 50px;
-  left: 0.25em;
-  padding: 30px;
-  display: inline-block;
-  float: left;
-}*/
-/*.big-text-box  {
-  margin-left: 30px;
-  margin-bottom: -40px;
-  width: 50%;
-  height: auto;
-  background-color: pink;
+  width: 300px;
+  height: 370px;
+  background-color: #424242;
   position: absolute;
-  top: 10em;
+  top: 230px;
   left: 0.25em;
   padding: 30px;
   display: inline-block;
-}*/
-.big-img {
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/lrg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: block;
-
 }
+  .big-img {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/lrg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+  }
 
-.big {
-  width: 66%;
-  height: 40em;
-  float: left;
-}
+  .big {
+    width: 66%;
+    height: 40em;
+    float: left;
 
+  }
 
+  .top, .btm {
+    height: 20em;
+    width: 34%;
+    float: right;
+  }
 
+  .top-img, .btm-img {
+    width: 100%;
+    height: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    display: block;
+  }
 
-/*
-.top {
-  height: 50%;
-}
-.btm {
-  height: 50%;
-}*/
-.top, .btm {
-  height: 20em;
-  width: 34%;
-  float: right;
-}
-.top-img, .btm-img {
-  width: 100%;
-  height: 70%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
-  display: block;
+  .top-text, .btm-text {
+    width: 100%;
+    min-height: 30%;
+    display: block;
+    padding: 10px;
+  }
 
-}
-.top-text, .btm-text {
-  width: 100%;
-  min-height: 30%;
-  display: block;
-  padding: 10px;
+  .top-text h2, .btm-text h2{
+    font-size: 12pt;
+    line-height: 1.5em;
+  }
 
-}
+  .tags {
+    margin-top: 10px;
+  }
 
-.top-text h2, .btm-text h2{
-  font-size: 12pt;
-  line-height: 1.5em;
-}
-
-.tags {
-  margin-top: 10px;
-}
-/*
-
-
-
-.top-text, .btm-text {
-  width: 100%;
-  height: 20%;
-  margin: auto;
-  margin-top: -9px;
-  display: inline-block;
-  padding: 10px;
-  content: "";
-  display: table;
-  clear: both;
-}
-
-}*/
 }
 
 /*////////////////////END LARGE///////////////*/
@@ -158,7 +125,7 @@ h2 {
     margin-bottom: -40px;
     width: 50%;
     height: auto;
-    background-color: pink;
+    background-color: #424242;
     position: absolute;
     top: 10em;
     left: 0.25em;
@@ -169,7 +136,7 @@ h2 {
   .big-img {
     position: relative;
     width: 100%;
-    height: 25em;
+    height: 30em;
     background-image: url("../img/lrg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -200,19 +167,21 @@ h2 {
 
   .top-text, .btm-text {
     width: 100%;
-    height: 20%;
+    height: 8em;
+    padding: 10px;
     display: block;
-
   }
 
   .top-text h2, .btm-text h2{
     font-size: 12pt;
     line-height: 1.5em;
-
   }
 
   .tags {
-    margin-top: 10px;
+    margin-top: 2em;
+  }
+  #hideme{
+    margin-top: 1em;
   }
 }
 
@@ -221,23 +190,22 @@ h2 {
 /*////////////////////MOBILE///////////////*/
 
 @media only screen and (max-width: 581px){
+
   #hideme {
     visibility: hidden;
   }
-  /*.big {
-    width: 100%;
-    height: 70%;
-  }*/
+
 
   .big-text-box  {
     margin-left: 30px;
     margin-bottom: -40px;
-    width: 65%;
-    max-height: 19em;
-    background-color: grey;
+    width: 90%;
+    max-height: 55%;
+    margin: auto;
+    background-color: #424242;
     position: absolute;
-    top: 4em;
-    left: 0.25em;
+    top: 130px;
+    left: 0.55em;
     padding: 20px;
     display: block;
   }
@@ -252,15 +220,13 @@ h2 {
     background-position: center;
     display: block;
   }
-  .tags {
-    margin-top: 10px;
-  }
+
   .top, .btm {
     width: 100%;
     min-height: 0;
     display: inline-block;
-
   }
+
   .top-img, .btm-img {
     width: 34%;
     height: 12em;
@@ -278,12 +244,15 @@ h2 {
     float: right;
     padding: 10px;
     line-height: 1.5em;
-
-
   }
+
   .top-text h2, .btm-text h2{
-    font-size: 1em;
+    font-size: 12pt;
+    line-height: 1.5em;
   }
 
+  .tags {
+    margin-top: 2em;
+  }
 
 }
