@@ -9,10 +9,12 @@
   margin: 0;
   color: white;
 }
+
 p {
   font-family: 'Roboto', sans-serif;
   font-size: 11pt;
 }
+
 h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: lighter;
@@ -22,12 +24,15 @@ h2 {
 .top-img {
   background-image: url("../img/top.jpg");
 }
+
 .btm-img {
   background-image: url("../img/btm.jpg");
 }
+
 .top-text {
   background-color: blue;
 }
+
 .btm-text {
   background-color: red;
 }
@@ -39,29 +44,30 @@ h2 {
 
 @media only screen and (min-width: 985px){
 
+  .big .tags {
+    margin-top: 90px;
+  }
 
-.big .tags {
-  margin-top: 90px;
-}
-#hideme{
-  margin-top: 20px;
-}
-.big h2 {
-  font-size: 30px;
+  #hideme{
+    margin-top: 20px;
+  }
 
-}
-.big-text-box  {
-  margin-left: 30px;
-  margin-bottom: -40px;
-  width: 300px;
-  height: 370px;
-  background-color: #424242;
-  position: absolute;
-  top: 230px;
-  left: 0.25em;
-  padding: 30px;
-  display: inline-block;
-}
+  .big h2 {
+    font-size: 30px;
+  }
+
+  .big-text-box  {
+    margin-left: 30px;
+    margin-bottom: -40px;
+    width: 300px;
+    height: 370px;
+    background-color: #424242;
+    position: absolute;
+    top: 230px;
+    left: 0.25em;
+    padding: 30px;
+    display: inline-block;
+  }
   .big-img {
     width: 100%;
     height: 100%;
@@ -76,7 +82,6 @@ h2 {
     width: 66%;
     height: 40em;
     float: left;
-
   }
 
   .top, .btm {
@@ -144,12 +149,12 @@ h2 {
     display: block;
   }
 
-
   .top {
     width: 50%;
     float: left;
     display: block;
   }
+
   .btm {
     width: 50%;
     float: right;
@@ -183,6 +188,7 @@ h2 {
   #hideme{
     margin-top: 1em;
   }
+
 }
 
 /*////////////////////END MEDIUM///////////////*/
@@ -195,8 +201,7 @@ h2 {
     visibility: hidden;
   }
 
-
-  .big-text-box  {
+  .big-text-box {
     margin-left: 30px;
     margin-bottom: -40px;
     width: 90%;
